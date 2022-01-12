@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="-10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="1000dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="900dp"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/component_5__1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-186dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="260dp"
+            android:layout_marginBottom="-60dp"
+            android:text="Plain Text"
+            android:textColor="#01BB20"
+            android:textSize="6pt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="-110dp"
+            android:enabled="true"
+            android:textColor="@color/white"
+            app:boxStrokeColor="#01BB20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="302dp"
+            android:layout_marginEnd="263dp"
+            android:layout_marginBottom="-147dp"
+            android:text="@string/key"
+            android:textColor="#01BB20"
+            android:textSize="6pt" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField2"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="326dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="-203dp"
+            android:enabled="true"
+            android:textColor="@color/white"
+            app:boxStrokeColor="#01BB20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="389dp"
+            android:layout_marginEnd="237dp"
+            android:layout_marginBottom="-232dp"
+            android:text="Algorithm"
+            android:textColor="#01BB20"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="486dp"
+            android:layout_marginEnd="238dp"
+            android:layout_marginBottom="-329dp"
+            android:text="Output"
+            android:textColor="#01BB20"
+            android:textSize="6pt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="417dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="-296dp"
+            android:backgroundTint="#01BB20"
+            android:enabled="true"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#01BB20">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField3"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="129dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="516dp"
+            android:layout_marginEnd="56dp"
+
+            android:layout_marginBottom="-458dp"
+            android:enabled="true"
+            android:textColor="@color/white"
+            app:boxStrokeColor="#01BB20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="649dp"
+            android:layout_marginEnd="148dp"
+
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#014D36"
+            android:text="Convert"
+            android:textColor="#01BB20" />
+
+    </RelativeLayout>
+</ScrollView>
