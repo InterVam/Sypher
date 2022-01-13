@@ -192,7 +192,24 @@
                 android:focusable="false"
                 android:inputType="none"
                 android:textColor="@color/white" />
+
+
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/copy"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="87dp"
+
+            android:layout_marginTop="650dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#014D36"
+            android:text="copy"
+            android:textColor="#01BB20" />
 
         <Button
             android:id="@+id/Convert"
@@ -202,14 +219,15 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
 
-            android:layout_marginStart="125dp"
-            android:layout_marginTop="649dp"
-            android:layout_marginEnd="148dp"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginEnd="71dp"
 
             android:layout_marginBottom="34dp"
             android:backgroundTint="#014D36"
             android:text="Convert"
             android:textColor="#01BB20" />
+
 
     </RelativeLayout>
 </ScrollView>

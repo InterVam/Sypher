@@ -1,5 +1,8 @@
 package com.example.trailappinkt
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val out = findViewById<TextInputEditText>(R.id.output)
         var algo =""
         val conv= findViewById<Button>(R.id.Convert)
+        val copy= findViewById<Button>(R.id.copy)
         val menu = resources.getStringArray(R.array.Algos)
         val arrayAdapter = ArrayAdapter(this,R.layout.menu_item,menu)
         Dropmenu.setAdapter(arrayAdapter)
@@ -74,21 +78,21 @@ class MainActivity : AppCompatActivity() {
                     val plain = plaintext.text.toString().replace("\\s".toRegex(), "")
                     val encodedText = playfair.encode(plain)
                     out.setText(encodedText)
-
-
-
-
                 }
-
-
-
-
-
             }
+        }
+        fun copyTextToClipboard() {
+            val textToCopy = out.text
+            val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clipData = ClipData.newPlainText("text", textToCopy)
+            clipboardManager.setPrimaryClip(clipData)
+            Toast.makeText(this, "Text copied to clipboard", Toast.LENGTH_LONG).show()
+        }
+        copy.setOnClickListener {
+            copyTextToClipboard()
+
 
         }
-
-
             }
         }
 
